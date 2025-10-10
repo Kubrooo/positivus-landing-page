@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +36,11 @@ body {
 
 .link li {
     margin-left: 2.5rem;
+}
+
+.link a{
+    text-decoration: none;
+    color: #191A23;
 }
 
 .link-btn {
@@ -170,8 +176,17 @@ header p{
     margin-right: 0.938rem;
 }
 
-.learn-more p{
+.learn-more a{
     font-size: 1.25em;
+    text-decoration: none;
+}
+
+.black-learn{
+    color: #0f0f14;
+}
+
+.white-learn{
+    color: #f1f1f1;
 }
 
 .card-img img {
@@ -473,6 +488,9 @@ header p{
         padding: 0 2.5rem;
     }
 
+    .link-btn {
+        display: none;
+    }
     /* --- Landing Page --- */
     header {
         flex-direction: column;
@@ -724,7 +742,7 @@ header p{
 /* =================================== */
 
 /* --- General Transition for Hover Effects --- */
-.link li, .link-btn, .cta-btn, .service-card, .profile-card, .case-link a, .contact-form button {
+.link li, .link a, .link-btn, .cta-btn, .service-card, .profile-card, .case-link a, .contact-form button {
     transition: all 0.3s ease-in-out;
 }
 
@@ -735,8 +753,9 @@ header p{
     background-color: #33343b; /* A slightly lighter dark shade for feedback */
 }
 
-.navbar .link li:hover {
-    color: #B9FF66; /* Using brand green for hover */
+.navbar .link a:hover {
+    color: #B9FF66;
+    text-decoration: underline solid #B9FF66 ; /* Using brand green for hover */
     cursor: pointer;
 }
 
