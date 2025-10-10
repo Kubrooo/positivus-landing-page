@@ -696,6 +696,10 @@ header p{
         width: 100%;
         padding: 2rem;
     }
+    
+    .linkedin-icon{
+        display: none;
+    }
 
     .block {
         padding: 2.5rem 1rem;
