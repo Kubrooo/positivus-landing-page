@@ -677,11 +677,15 @@ header p{
     }
 
     .accordion-header span {
-        font-size: 2.5em;
+        font-size: 2.25em;
     }
     
     .accordion-header h3 {
         font-size: 1.25em;
+    }
+
+    .accordion-header img{
+        display: none;
     }
     
     .accordion-content {
